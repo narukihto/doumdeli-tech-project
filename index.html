@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doumdeli Technologie Internationale - Maintenance, Solutions IT & FRP Bypass</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts : Cairo & Inter للمظهر التقني والهندسي الحديث -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- الربط المباشر بملف التنسيق الخارجي المسطح بدون مجلدات -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Manifest & Theme Color -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#2563eb">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col">
+
+  <!-- ========================================== -->
+  <!-- 1. BARRE DE NAVIGATION (NAVBAR) -->
+  <!-- ========================================== -->
+  <header class="bg-slate-950/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[96px] py-4 md:py-0 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+      <div class="flex items-center gap-4 w-full md:w-auto">
+        <!-- شعار التكنولوجيا الاحترافي النابض -->
+        <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/30 shrink-0">
+          <i class="fa-solid fa-microchip text-3xl animate-pulse text-cyan-300"></i>
+        </div>
+        <div>
+          <h1 class="text-lg md:text-2xl font-black text-white tracking-wide leading-tight">
+            Doumdeli <span class="text-cyan-400">Technologie Internationale</span>
+          </h1>
+          <p class="text-[10px] md:text-xs text-slate-400 font-bold tracking-wider uppercase mt-0.5">Ingénierie, Maintenance & Solutions Globales</p>
+        </div>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-6 font-semibold text-slate-300">
+        <a href="#hero" class="hover:text-blue-400 transition">Accueil</a>
+        <a href="#services" class="hover:text-blue-400 transition">Nos Services</a>
+        <a href="#lab-info" class="hover:text-blue-400 transition">Le Laboratoire</a>
+        <a href="#ticket" class="hover:text-blue-400 transition">Créer un Ticket</a>
+      </nav>
+
+      <a href="#ticket" class="w-full md:w-auto text-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-blue-500/20 transition flex items-center gap-2 shrink-0">
+        <i class="fa-solid fa-screwdriver-wrench"></i> Support & Réparation Express
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. SECTION D'ACCUEIL (HERO SECTION) -->
+  <!-- ========================================== -->
+  <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-left">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-950/60 border border-blue-800 text-blue-400 font-bold text-sm mb-6">
+          <i class="fa-solid fa-shield-halved text-cyan-400"></i> Centre de Maintenance Certifié
+        </span>
+        <h2 class="text-4xl md:text-5xl font-black text-white leading-tight mb-6">
+          Zéro blocage, performance absolue..<br>
+          <span class="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">Nous redonnons vie à votre technologie</span>
+        </h2>
+        <p class="text-lg text-slate-400 font-medium leading-relaxed mb-8">
+          Experts en ingénierie informatique, systèmes mobiles et réseaux. De la micro-soudure avancée de cartes mères à la reprogrammation logicielle de rupture (Bypass iCloud, FRP Google Lock, Flash Firmware d'usine), nos techniciens certifiés résolvent les pannes matérielles et logicielles les plus complexes.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-blue-500/20 transition text-center flex-1 sm:flex-none">
+            Explorer les Services
+          </a>
+          <a href="#lab-info" class="bg-slate-800 border-2 border-slate-700 hover:border-blue-500 text-slate-200 font-bold px-8 py-4 rounded-2xl transition text-center flex-1 sm:flex-none">
+            Visiter le Laboratoire & Vidéos
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-tr from-blue-500 to-cyan-500 rounded-3xl filter blur-3xl opacity-10 -z-10"></div>
+        <img id="hero-tech-img" src="https://images.unsplash.com/photo-1597733336794-12d05021d510?w=800" alt="Maintenance Technologique Avancée" class="w-full h-[450px] object-cover rounded-3xl shadow-2xl border-4 border-slate-800">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. SECTION SERVICES (SERVICES CONTAINER) -->
+  <!-- ========================================== -->
+  <main id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h3 class="text-3xl font-black text-white mb-4">Pôles d'Intervention & Ingénierie Technique</h3>
+      <p class="text-slate-400 font-medium">Découvrez nos solutions de réparation de pointe, de la micro-électronique au déblocage logiciel de sécurité de niveau industriel.</p>
+    </div>
+
+    <!-- شبكة الخدمات التكنولوجية (يتم إنشاؤها ديناميكياً وبشكل طويل متناسق عبر ملف app.js) -->
+    <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- لودر الانتظار المؤقت لحين تحميل بيانات الـ API الفيك -->
+      <div class="col-span-full text-center py-12">
+        <i class="fa-solid fa-circle-notch fa-spin text-4xl text-blue-500"></i>
+        <p class="text-slate-500 font-medium mt-3">Initialisation des bases de données techniques et de l'imagerie matériel...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 4. LE LABORATOIRE TECHNIQUE & FLUX VIDÉO (LAB INFO) -->
+  <!-- ========================================== -->
+  <section id="lab-info" class="bg-slate-950 text-white py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-left">
+        <span class="text-cyan-400 font-bold uppercase tracking-wider text-sm block mb-2">// Équipements de Diagnostic de Nouvelle Génération</span>
+        <h3 class="text-3xl font-black mb-6">Le Laboratoire de Haute Précision</h3>
+        <p class="text-slate-400 font-medium leading-relaxed mb-6">
+          Notre plateforme réunit les meilleurs experts techniques de l'ingénierie matérielle et logicielle. Équipés d'outillages de pointe (microscopes électroniques, boîtiers de programmation JTAG/EMMC), nous réalisons des interventions chirurgicales sur ordinateurs, serveurs et smartphones de toutes marques.
+        </p>
+        <div class="space-y-4 font-semibold text-slate-300 mb-8">
+          <div class="flex items-center gap-3"><i class="fa-solid fa-square-check text-blue-500"></i> Déblocage et contournement d'antivols avancés (FRP Google, Mi Account, iCloud Bypass).</div>
+          <div class="flex items-center gap-3"><i class="fa-solid fa-square-check text-blue-500"></i> Micro-soudure de composants CMS, rebillage BGA de processeurs et chipsets graphiques.</div>
+          <div class="flex items-center gap-3"><i class="fa-solid fa-square-check text-blue-500"></i> Restauration complète d'OS corrompus, injection de firmwares et récupération forensique.</div>
+        </div>
+      </div>
+
+      <!-- مشغل اليوتيوب وأزرار التيك توك التقنية المدمجة بشكل رائع -->
+      <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800 shadow-2xl relative space-y-5">
+        <h4 class="text-base font-bold text-slate-200 flex items-center gap-2">
+          <i class="fa-solid fa-display text-blue-500 animate-pulse text-lg"></i>
+          Démonstrations de Micro-Soudure & Reprogrammation Logicielle
+        </h4>
+
+        <!-- فيديو يوتيوب تقني متناسق -->
+        <div class="w-full h-64 bg-slate-950 rounded-2xl overflow-hidden shadow-inner relative border border-slate-800">
+          <iframe 
+            class="w-full h-full object-cover"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=1" 
+            title="Laboratoire de Maintenance High-Tech" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <div class="absolute inset-0 bg-slate-950/5 pointer-events-none"></div>
+        </div>
+
+        <!-- أزرار التيك توك المخصصة للفيديوهات التقنية وجلسات فك الأقفال -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-wider"><i class="fa-solid fa-bolt text-cyan-400 mr-1"></i> Interventions Réelles en Atelier (TikTok) :</p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <a href="https://vt.tiktok.com/ZSC2b9on7/" target="_blank" class="flex items-center justify-center gap-2 bg-slate-950 hover:bg-black border border-slate-800 hover:border-blue-500 text-slate-200 hover:text-white font-bold py-3 px-4 rounded-xl transition text-xs shadow-sm">
+              <i class="fa-brands fa-tiktok text-cyan-400 text-sm"></i> Session Laboratoire 1
+            </a>
+            <a href="https://vt.tiktok.com/ZSC2qw7tV/" target="_blank" class="flex items-center justify-center gap-2 bg-slate-950 hover:bg-black border border-slate-800 hover:border-blue-500 text-slate-200 hover:text-white font-bold py-3 px-4 rounded-xl transition text-xs shadow-sm">
+              <i class="fa-brands fa-tiktok text-cyan-400 text-sm"></i> Session Laboratoire 2
+            </a>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-slate-500 font-medium italic text-right leading-normal pt-1 border-t border-slate-800/60">
+          * Vidéos illustratives – Présentation représentative des normes et équipements d'ingénierie de nos ateliers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. FORMULAIRE DE CRÉATION DE TICKET DE RÉPARATION (TICKET FORM) -->
+  <!-- ========================================== -->
+  <section id="ticket" class="max-w-3xl mx-auto px-4 py-16 w-full">
+    <div class="bg-slate-950 rounded-3xl shadow-2xl p-8 md:p-10 border border-slate-800 text-left">
+      <div class="text-center mb-8">
+        <i class="fa-solid fa-laptop-medical text-4xl text-blue-500 mb-3"></i>
+        <h3 class="text-2xl font-black text-white">Créer un Ticket d'Intervention Technique</h3>
+        <p class="text-sm font-medium text-slate-400 mt-2">Renseignez les détails techniques de la panne. Un ingénieur certifié évaluera les rapports de diagnostic pour une prise en charge immédiate.</p>
+      </div>
+
+      <form id="tech-form" onsubmit="event.preventDefault(); alert('Votre ticket de maintenance a été généré avec succès ! Nos ingénieurs vont vous contacter sur WhatsApp sous peu pour valider le diagnostic et organiser la prise en charge de votre appareil.');">
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Nom Complet du Client / Entreprise</label>
+            <input type="text" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-blue-500 transition shadow-inner" placeholder="Ex: Jean Dupont, Doumdeli Corp...">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Numéro WhatsApp (Avec code pays)</label>
+            <input type="tel" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-blue-500 transition text-left shadow-inner" placeholder="Ex: +33 6... ou +223...">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Type d'Appareil & Panne Principale</label>
+            <select id="device-select" class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 focus:outline-none focus:border-blue-500 transition font-semibold shadow-inner">
+              <option>Blocage Sécurité (FRP Google Lock, iCloud Bypass, Code)</option>
+              <option>Smartphone Android / iOS (Écran, Batterie, Circuit de Charge)</option>
+              <option>Ordinateur Portable / PC Fixe (Matériel ou Système d'exploitation)</option>
+              <option>Équipements Réseaux, Serveurs & Stockage NAS</option>
+              <option>Micro-Soudure complexe sur carte logique</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Marque & Modèle Précis</label>
+            <input type="text" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-blue-500 transition shadow-inner" placeholder="Ex: Samsung S24 Ultra, MacBook Pro M3...">
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-sm font-bold text-slate-300 mb-2">Description Détaillée des Symptômes de la Panne</label>
+          <textarea rows="4" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-blue-500 transition shadow-inner" placeholder="Veuillez décrire l'origine de la panne (Ex: bloqué après mise à jour, tombé dans l'eau, surchauffe...)"></textarea>
+        </div>
+
+        <div class="mb-8">
+          <label class="block text-sm font-bold text-slate-300 mb-2">Téléverser des captures d'écran de la panne ou rapports de logs (Optionnel)</label>
+          <div class="border-2 border-dashed border-slate-800 hover:border-blue-500 rounded-2xl p-6 bg-slate-900 transition flex flex-col items-center justify-center text-center cursor-pointer relative">
+            <input type="file" multiple class="absolute inset-0 opacity-0 cursor-pointer">
+            <i class="fa-solid fa-folder-open text-3xl text-slate-600 mb-2"></i>
+            <span class="text-sm font-bold text-slate-400">Cliquez ici pour joindre des photos ou fichiers de diagnostic</span>
+            <span class="text-xs text-slate-600 mt-1">Vous pouvez sélectionner plusieurs éléments simultanément.</span>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-black py-4 rounded-2xl shadow-lg transition tracking-wide text-lg">
+          <i class="fa-solid fa-paper-plane mr-2"></i> Valider et Initialiser la Prise en Charge
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. PIED DE PAGE (FOOTER) -->
+  <!-- ========================================== -->
+  <footer class="bg-slate-950 border-t border-slate-800 text-center py-8 mt-auto text-sm font-semibold text-slate-500">
+    <p>© 2026 Doumdeli Technologie Internationale. Tous droits réservés - L'ingénierie globale de pointe au service de la performance.</p>
+  </footer>
+
+  <!-- الربط بالملف البرمجي الخارجي المسطح -->
+  <script src="app.js"></script>
+</body>
+</html>
