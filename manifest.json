@@ -1,0 +1,27 @@
+{
+  "short_name": "DoumdeliTech",
+  "name": "Doumdeli Technologie Internationale",
+  "description": "Solutions globales d'ingénierie, maintenance informatique, réparation de smartphones et déblocage de sécurité système avancée (FRP Bypass).",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["tech", "utilities"],
+  "lang": "fr-FR",
+  "dir": "ltr"
+}
