@@ -1,0 +1,75 @@
+/* ==========================================================================
+   STYLE.CSS - DOUMDELI TECHNOLOGIE INTERNATIONALE (VISUAL CORE)
+   ========================================================================== */
+
+/* 1. تخصيص شريط التمرير ليعطي مظهر برمجياً احترافياً */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* لون خلفية النوافذ slate-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* slate-800 */
+  border-radius: 20px;
+  border: 2px solid #0f172a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* الأزرق التقني عند التمرير */
+  box-shadow: 0 0 10px #2563eb;
+}
+
+/* 2. تأثيرات إضاءة وتوهج النيون للأزرار التقنية (Neon Glow Effects) */
+.shadow-neon-blue {
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+.shadow-neon-blue:hover {
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.6), 0 0 5px rgba(6, 182, 212, 0.4);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 3. حركات أنيميشن مخصصة لقطع الغيار المعالجة والأيقونات النابضة */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 5px rgba(37, 99, 235, 0.4));
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.8));
+  }
+}
+
+/* تطبيق الأنميشن على أيقونة الشعار الرئيسي أو الأزرار الهامة */
+.animate-tech-pulse {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+/* 4. تحسين مظهر حقول استمارة الحجز والفورم لتشبه شاشات البرمجة والـ Terminal */
+input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2), 0 0 10px rgba(6, 182, 212, 0.3);
+  border-color: #2563eb !important;
+}
+
+/* 5. تجميل وتأثير الهوفير (Hover) على كروت الخدمات والـ Cards */
+.group:hover img {
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* 6. استجابة سريعة وسلسة لكافة التأثيرات الحركية في الموقع */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
