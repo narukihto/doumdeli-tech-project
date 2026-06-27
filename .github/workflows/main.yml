@@ -1,4 +1,4 @@
-Name: Doumdeli Tech Global CI/CD
+name: Doumdeli Tech Global CI/CD
 
 on:
   push:
